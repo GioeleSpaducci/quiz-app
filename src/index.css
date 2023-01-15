@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #F5F7FB;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 40px;
+  margin-bottom: 40px;
+}
+
+.title {
+  padding: 80px;
+  font-family: 'Karla';
+  font-style: normal;
+  font-size: 50px;
+  font-weight: 500;
+  text-align: center;
+  color: #293264;
+}
+
+.description {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.question {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.question-title {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #293264;
+}
+
+.answer {
+  min-width: 150px;
+  min-height: 80px;
+  padding: 0 8px;
+  border: 2px solid #4D5B9E;
+  border-radius: 10px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10.24px;
+  line-height: 12px;
+  text-align: center;
+  word-wrap: break-word;
+  hyphens: auto;
+  color: #293264;
+
+}
+
+.answer:hover,
+.selected {
+  background-color: #D6DBF5;
+}
+
+.resolved .answer {
+  opacity: 0.5;
+}
+
+.resolved .selected {
+  background-color: #F8BCBC;
+  border: none;
+  opacity: 1;
+}
+
+.resolved .correct {
+  background-color: #94D7A2;
+  border: none;
+  opacity: 1;
+}
+
+.answers-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+
+.error-message {
+  margin-top: 40px;
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #293264;
+  text-decoration: underline;
+}
+
+.submit-button {
+  margin-top: 50px;
+  width: 150px;
+  padding: 20px;
+  border: none;
+  background: #4D5B9E;
+  border-radius: 10px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 10.24px;
+  line-height: 12px;
+  text-align: center;
+  color: #F5F7FB;
+}
+
+@media only screen and (max-width: 600px) {
+  .answer {
+    min-width: 80px
+  }
+}
